@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactList</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400..700&family=Dynalight&family=Italianno&family=Libertinus+Mono&family=Manufacturing+Consent&family=Mea+Culpa&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Romanesco&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Xanh+Mono:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <h4 class="text-center pt-3">CONTACT LIST</h4>
+    <div class="flex justify-center pt-10">
+        <div class="block w-110 h-70 bg-gray-300 p-3 border-gray-100 rounded-lg">
+            <input type="text" placeholder="Name" id="names"
+                class="block w-100 h-15 bg-gray-100 border border-gray-100 rounded-lg">
+            <br>
+            <input type="text" id="phone" placeholder="Phone number" onclick=""
+                class="block w-100 h-15 bg-gray-100 border border-gray-100 rounded-lg">
+            <br>
+            <button type="button" onclick="addContact()"
+             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Save</button>
+            <button type="button" onclick="cancelContact()"
+             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Cancel</button>
+            </div>
+             
+    </div>
+    <div class="">
+     <ul class="taskList mt-5 w-full max-w-md mx-auto space-y-2">
+       
+        </ul>
+    </div>
+    
+        
+    
+</body>
+
+</html>
