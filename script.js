@@ -9,11 +9,11 @@ function addContact() {
     else {
         let li = document.createElement('li')
         li.innerHTML = `
-        <div class="flex justify-evenly items-center gap-4 block w-100 h-15 bg-gray-300 border-gray-300 rounded-lg">
+        <div class="flex justify-evenly items-center gap-4 block w-110 h-15 bg-blue-200 border-blue-300 rounded-lg" style="box-shadow: rgb(119, 119, 183) 5px 6px 8px;">
         <span class="textname">${taskName}</span>
         <span class ="textphone">${taskPhn}</span>
-        <button type="button" onclick="editTask(this)">edit</button>
-        <button type="button" onclick="deleteTask(this)">delete</button>
+        <button type="button" onclick="editTask(this)"><i class="fa-solid fa-pen" style="color: #242821ff;"></i></button>
+        <button type="button" onclick="deleteTask(this)"><i class="fa-solid fa-trash" style="color: #202327;"></i></button>
         </div>
         `
         taskList = document.querySelector('.taskList')
@@ -48,6 +48,7 @@ function editTask(button) {
 
 function deleteTask(button)
 {
+  alert("Are you sure you want to delete")
   li=button.closest('li')
   li.remove()
 }
